@@ -2,7 +2,7 @@
 
 # Table of Contents
 
-1.  [Azure Stack HCI](#AzureStackHCI)
+1. [Azure Stack HCI](#AzureStackHCI)
 2. [Arc-enabled Server](#ArcEnabledServer)
 3. [Arc-enabled VMWare](#ArcEnabledVMWare)
 4. [Arc-enabled VMM](#ArcEnabledVMM)
