@@ -2,7 +2,8 @@
 
 ## Deploy lab infrastructure for Azure Stack HCI
 
-    **Use Cloud Shell Bash for the deployment**
+>
+> **Use Cloud Shell Bash for the deployment**
 
 Make sure you have configured **main.parameters.json** with the following settings described on the following guide
 
