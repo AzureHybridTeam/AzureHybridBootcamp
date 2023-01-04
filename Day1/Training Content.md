@@ -35,6 +35,7 @@
     -   VM deployment        
     -   Network management        
 -   Kernel soft reboot
+-   NetIntent
 
 ### Deployment Process
 
