@@ -10,7 +10,7 @@
 
 Defender for Servers, SQL and Sentinel Labs
 -   Improve Secure Score regarding Arc enabled servers and Arc enabled SQL Servers by filtering resource types [Improving your security posture with recommendations in Microsoft Defender for Cloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-cloud/review-security-recommendations)
--   Simulate SQL Server attacks like  SQL Brute Force or SQL Injection on Arcbox-SQL [Validating Alerts on Microsoft Defender for SQL on machines - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/validating-alerts-on-microsoft-defender-for-sql-on-machines/ba-p/3070714)
+-   Simulate SQL Server attacks like  SQL Brute Force or SQL Injection on Arcbox-SQL- "Validate alert" section [Validating Alerts on Microsoft Defender for SQL on machines - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/validating-alerts-on-microsoft-defender-for-sql-on-machines/ba-p/3070714)
 -   Onboard Sentinel for newly created Log Analytics Workspace [Onboard Azure Arc-enabled servers to Microsoft Sentinel - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/secure-azure-arc-enabled-servers/6-onboard-azure-arc-enabled-servers-to-microsoft-sentinel)
 -   Security Baseline Assessment [Security baselines assessment | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-security-baselines?view=o365-worldwide)
 -   Simulate “PowerShell script in fileless attack” in http://security.microsoft.com [How to run a simulation](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-simulations?view=o365-worldwide#run-a-simulation)
