@@ -7,3 +7,6 @@
 -   Inventory / change tracking
 -   Azure Monitor [Onboard Azure Arc-enabled servers to VM insights - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/monitor-azure-arc-enabled-servers/3-onboard-azure-arc-enabled-servers-to-vm-insights)
 -   Custom script extension
+
+Defender for Servers, SQL and Sentinel Labs
+-   Improve Secure Score regarding Arc enabled servers and Arc enabled SQL Servers [Improving your security posture with recommendations in Microsoft Defender for Cloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-cloud/review-security-recommendations)
