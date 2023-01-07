@@ -23,9 +23,9 @@ Below are the lab items that are going to be covered.
 
     1. follow the article to assign Update management V2 Policies 
 
-        [Preview]: Configure periodic checking for missing system updates on Azure Arc-enabled servers for Arc-enabled machines
-        [Preview]: Machines should be configured to periodically check for missing system updates.
-        [Preview]: Schedule recurring updates using Update Management Center
+            [Preview]: Configure periodic checking for missing system updates on Azure Arc-enabled servers for Arc-enabled machines
+            [Preview]: Machines should be configured to periodically check for missing system updates.
+            [Preview]: Schedule recurring updates using Update Management Center
 
         described in
 
@@ -36,14 +36,13 @@ Below are the lab items that are going to be covered.
         [Monitor if Periodic Assessment is enabled for your machines (both Azure and Arc-enabled machines)](https://learn.microsoft.com/en-us/azure/update-center/periodic-assessment-at-scale#monitor-if-periodic-assessment-is-enabled-for-your-machines-both-azure-and-arc-enabled-machines)
 
 
-
         [Create a maintenance configuration](https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations-portal#create-a-maintenance-configuration) to create maintenance configuration for Linux and Windows machines to be used in Scheduling Policy.
 
         and
 
         [Schedule recurring updates for machines using Azure portal and Azure Policy](https://learn.microsoft.com/en-us/azure/update-center/scheduled-patching?tabs=schedule-updates-single-overview%2Cschedule-updates-scale-overview#dynamic-scoping-using-policy)
-        
-        Before creating the scheduling policy, copy the ARM ID of the created maintenance configuration in *properties* section.
+
+        **Note:**   Before creating the scheduling policy, copy the ARM ID of the created maintenance configuration in *properties* section.
     
     2. For Manual update check without waiting for policy follow [Check for Updates on scale following article](https://learn.microsoft.com/en-us/azure/update-center/view-updates?tabs=singlevm-overview%2Cat-scale-overview#check-updates-at-scale)
     
@@ -51,6 +50,22 @@ Below are the lab items that are going to be covered.
  
 
 - **Inventory / change tracking**
+
+
+    1. Please check if Automation account is created in ArcBox RG. If not, please create one. 
+    following the article [Create a new Automation account in the Azure portal](https://learn.microsoft.com/en-us/azure/automation/automation-create-standalone-account?tabs=azureportal#create-a-new-automation-account-in-the-azure-portal).
+
+    2. Please check if Change Tracking and Inventory is enabled for the Automation account. If not, please enable folowing the article [Enable Change Tracking and Inventory](https://learn.microsoft.com/en-us/azure/automation/change-tracking/enable-from-automation-account#enable-machines-in-the-workspace)
+    
+    3. Follow the article [Manage Change Tracking and Inventory] (https://learn.microsoft.com/en-us/azure/automation/change-tracking/manage-change-tracking)
+    In this article exercie the scenarios below:
+        * Configure file tracking on Windows
+        * Configure file tracking on Linux
+        * Track file contents
+        * Enable tracking for file content changes
+        * View the contents of a tracked file
+        * Track registry keys
+        * Search logs for change records
 
 - **Remote  Connect SSH** [(Preview) SSH access to Azure Arc-enabled servers - Azure Arc | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-overview?tabs=azure-cli)
 
