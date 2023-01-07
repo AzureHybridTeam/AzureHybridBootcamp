@@ -81,6 +81,50 @@ Below are the lab items that are going to be covered.
  
     [(Preview) SSH access to Azure Arc-enabled servers - Azure Arc | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-overview?tabs=azure-cli)
 
+3. Try remote SSH to Arc Enabled Server using command line  
+
+- ***Azure Key Vault***
+
+    We'll be exercising to deploy a self-signed certificate to Arc enabled Server using Azure KeyVault.
+
+    i. Follow the article to create [Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-portal#create-a-vault) 
+
+    ii. Follow the article to [Set and Retrieve Certificate from Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/certificates/quick-create-portal)
+    
+    iii. Create access policy on Azure Key Vault you have created. You can configure permissions on your vault by going to it in the Azure Portal, clicking Access policies in the navigation pane, and then Add Access Policy.
+
+     In the Secret permissions drop down, tick the boxes for Get and List. Then, next to Select Principal, click None selected to open the AAD object picker. 
+
+    Search for your Arc enabled server by its name, click it, then click Select. Click Add to finish configuring the Arc enabled server's permissions then click Save to commit the change.
+    
+    iv. Modify and run the following lines in the below PowerShell script
+
+```Powershell
+$Settings = @{
+  secretsManagementSettings = @{
+    observedCertificates = @(
+      "https://YOURVAULTNAME.vault.azure.net/secrets/YOURCERTIFICATENAME"
+      # Add more here in a comma separated list
+    )
+    certificateStoreLocation = "LocalMachine"
+    certificateStoreName = "My"
+    pollingIntervalInS = "3600" # every hour
+  }
+  authenticationSettings = @{
+    # Don't change this line, it's required for Arc enabled servers
+    msiEndpoint = "http://localhost:40342/metadata/identity"
+  }
+}
+
+$ResourceGroup = "ARC_SERVER_RG_NAME"
+$ArcMachineName = "ARC_SERVER_NAME"
+$Location = "ARC_SERVER_LOCATION (e.g. eastus2)"
+
+New-AzConnectedMachineExtension -ResourceGroupName $ResourceGroup -MachineName $ArcMachineName -Name "KeyVaultForWindows" -Location $Location -Publisher "Microsoft.Azure.KeyVault" -ExtensionType "KeyVaultForWindows" -Setting (ConvertTo-Json $Settings)
+```
+
+ 
+
 - ***Windows Admin Center*** [Manage Azure Arc-enabled Servers using Windows Admin Center in Azure preview | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/manage-arc-hybrid-machines)
 
 - ***Azure Monitor*** [Onboard Azure Arc-enabled servers to VM insights - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/monitor-azure-arc-enabled-servers/3-onboard-azure-arc-enabled-servers-to-vm-insights)
