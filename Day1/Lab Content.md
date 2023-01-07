@@ -2,7 +2,7 @@
 
 Below are the lab items that are going to be covered.
 
-- **Applying Azure Policy to Arc Enabled Servers:**
+- ***Applying Azure Policy to Arc Enabled Servers:***
 
      In this lab environment we are using [**Jumpstart ArcBox for IT Pros**](https://azurearcjumpstart.io/azure_jumpstart_arcbox/itpro) as vm environment.  
      As previously stated please make sure "Microsoft defender for Cloud" environment settings have been enabled prior to lab described [here](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-enhanced-security). 
@@ -19,7 +19,7 @@ Below are the lab items that are going to be covered.
 
     For further reference, you can find the list of Policies and Initiatives for Arc Enabled Servers [here](https://learn.microsoft.com/en-us/azure/azure-arc/servers/policy-reference).
 
-- **Update Management v2:**
+- ***Update Management v2:***
 
     1. follow the article to assign Update management V2 Policies 
 
@@ -49,7 +49,7 @@ Below are the lab items that are going to be covered.
     3. For one time installation of updates follow [Install updates one time following Article](https://learn.microsoft.com/en-us/azure/update-center/deploy-updates?tabs=install-single-overview%2Cinstall-scale-overview#install-updates-at-scale)
  
 
-- **Inventory / change tracking**
+- ***Inventory / Change Tracking***
 
 
     1. Please check if Automation account is created in ArcBox RG. If not, please create one. 
@@ -67,7 +67,7 @@ Below are the lab items that are going to be covered.
         * Track registry keys
         * Search logs for change records
 
-- **Remote  Connect SSH**
+- ***Remote  Connect SSH***
 
     We are going to make ssh connection to one of the Windows Arc enabled Servers. SSH server services needs to be enabled on the server side. 
 
@@ -75,13 +75,15 @@ Below are the lab items that are going to be covered.
 
     [Get started with OpenSSH for Windows](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=powershell)
 
+    Make sure "OpenSSH SSH Server" and "OpenSSH Authentication Agent" services are started on the Arc enabled server.
+
 2. Enable SSH on azure connected machine agent and enable connection points following the article
  
     [(Preview) SSH access to Azure Arc-enabled servers - Azure Arc | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-overview?tabs=azure-cli)
 
-- **Windows Admin Center** [Manage Azure Arc-enabled Servers using Windows Admin Center in Azure preview | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/manage-arc-hybrid-machines)
+- ***Windows Admin Center*** [Manage Azure Arc-enabled Servers using Windows Admin Center in Azure preview | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/manage-arc-hybrid-machines)
 
-- **Azure Monitor** [Onboard Azure Arc-enabled servers to VM insights - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/monitor-azure-arc-enabled-servers/3-onboard-azure-arc-enabled-servers-to-vm-insights)
+- ***Azure Monitor*** [Onboard Azure Arc-enabled servers to VM insights - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/monitor-azure-arc-enabled-servers/3-onboard-azure-arc-enabled-servers-to-vm-insights)
 - Alert: Agent version alert
   - Alert: Heartbeat Alert
   - Failed connections alert, open ports
