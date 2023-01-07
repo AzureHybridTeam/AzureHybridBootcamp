@@ -3,8 +3,8 @@
 Below are the lab items that are going to be covered.
 
 - Policy: In this lab environment we are using [**Jumpstart ArcBox for IT Pros**](https://azurearcjumpstart.io/azure_jumpstart_arcbox/itpro) as vm environment.  
- As previously stated please make sure "Microsoft defender for Cloud" environment settings have been enabled prior to lab described [here](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-enhanced-security). Make sure all of the settings are enabled and defender uses the Log Analytics Workspace that ArcBox has created.
-[Defender settings](/Day1/pics/defender1.jpg)
+ As previously stated please make sure "Microsoft defender for Cloud" environment settings have been enabled prior to lab described [here](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-enhanced-security). Make sure all of the settings are enabled and defender uses the Log Analytics Workspace that ArcBox has created as shown in the pictures
+[Defender Plans settings](/Day1/pics/defender1.jpg) and [Setting & Monitoring](/Day1/pics/defender2.jpg)
 
 - Machine configuration
 - Update Management v2 [Use Update Management in Azure Automation to manage operating system updates for Azure Arc-enabled servers - Cloud Adoption Framework | Microsoft Learn](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/manage/hybrid/server/best-practices/arc-update-management)
