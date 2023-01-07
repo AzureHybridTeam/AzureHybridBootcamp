@@ -35,7 +35,6 @@ Below are the lab items that are going to be covered.
 
         [Monitor if Periodic Assessment is enabled for your machines (both Azure and Arc-enabled machines)](https://learn.microsoft.com/en-us/azure/update-center/periodic-assessment-at-scale#monitor-if-periodic-assessment-is-enabled-for-your-machines-both-azure-and-arc-enabled-machines)
 
-
         [Create a maintenance configuration](https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations-portal#create-a-maintenance-configuration) to create maintenance configuration for Linux and Windows machines to be used in Scheduling Policy.
 
         and
@@ -71,33 +70,33 @@ Below are the lab items that are going to be covered.
 
     We are going to make ssh connection to one of the Windows Arc enabled Servers. SSH server services needs to be enabled on the server side. 
 
-1. Logon to one of the Windows Servers using Hyper-V console on Arc Box vm and enable SSH server following the article
+    1. Logon to one of the Windows Servers using Hyper-V console on Arc Box vm and enable SSH server following the article
 
     [Get started with OpenSSH for Windows](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=powershell)
 
     Make sure "OpenSSH SSH Server" and "OpenSSH Authentication Agent" services are started on the Arc enabled server.
 
-2. Enable SSH on azure connected machine agent and enable connection points following the article
+    2. Enable SSH on azure connected machine agent and enable connection points following the article
  
     [(Preview) SSH access to Azure Arc-enabled servers - Azure Arc | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-overview?tabs=azure-cli)
 
-3. Try remote SSH to Arc Enabled Server using command line  
+    3. Try remote SSH to Arc Enabled Server using command line  
 
 - ***Azure Key Vault***
 
     We'll be exercising to deploy a self-signed certificate to Arc enabled Server using Azure KeyVault.
 
-    i. Follow the article to create [Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-portal#create-a-vault) 
+    1. Follow the article to create [Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-portal#create-a-vault) 
 
-    ii. Follow the article to [Set and Retrieve Certificate from Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/certificates/quick-create-portal)
+    2. Follow the article to [Set and Retrieve Certificate from Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/certificates/quick-create-portal)
     
-    iii. Create access policy on Azure Key Vault you have created. You can configure permissions on your vault by going to it in the Azure Portal, clicking Access policies in the navigation pane, and then Add Access Policy.
+    3. Create access policy on Azure Key Vault you have created. You can configure permissions on your vault by going to it in the Azure Portal, clicking Access policies in the navigation pane, and then Add Access Policy.
 
      In the Secret permissions drop down, tick the boxes for Get and List. Then, next to Select Principal, click None selected to open the AAD object picker. 
 
     Search for your Arc enabled server by its name, click it, then click Select. Click Add to finish configuring the Arc enabled server's permissions then click Save to commit the change.
     
-    iv. Modify and run the following lines in the below PowerShell script
+    4. Modify and run the following lines in the below PowerShell script
 
 ```Powershell
 $Settings = @{
@@ -125,7 +124,10 @@ New-AzConnectedMachineExtension -ResourceGroupName $ResourceGroup -MachineName $
 
  
 
-- ***Windows Admin Center*** [Manage Azure Arc-enabled Servers using Windows Admin Center in Azure preview | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/manage-arc-hybrid-machines)
+- ***Windows Admin Center*** 
+
+    Follow the article to install and connect to Windows Admin Center on Arc Enabled Servers 
+    [Manage Azure Arc-enabled Servers using Windows Admin Center in Azure preview | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/manage-arc-hybrid-machines)
 
 - ***Azure Monitor*** [Onboard Azure Arc-enabled servers to VM insights - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/monitor-azure-arc-enabled-servers/3-onboard-azure-arc-enabled-servers-to-vm-insights)
 - Alert: Agent version alert
