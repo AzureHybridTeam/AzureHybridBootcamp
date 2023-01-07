@@ -129,6 +129,9 @@ New-AzConnectedMachineExtension -ResourceGroupName $ResourceGroup -MachineName $
     Follow the article to install and connect to Windows Admin Center on Arc Enabled Servers 
     [Manage Azure Arc-enabled Servers using Windows Admin Center in Azure preview | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/manage-arc-hybrid-machines)
 
+    **Note:** After setting Up Windows Admin Center, you need to add "Windows Admin Center Administrator Login" for the users who need acces to WAC using IAM (Access Control) of the Arc Enabled Server.
+
+
 - ***Azure Monitor*** [Onboard Azure Arc-enabled servers to VM insights - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/monitor-azure-arc-enabled-servers/3-onboard-azure-arc-enabled-servers-to-vm-insights)
 - Alert: Agent version alert
   - Alert: Heartbeat Alert
