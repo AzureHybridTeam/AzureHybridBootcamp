@@ -57,7 +57,7 @@ Below are the lab items that are going to be covered.
 
     2. Please check if Change Tracking and Inventory is enabled for the Automation account. If not, please enable folowing the article [Enable Change Tracking and Inventory](https://learn.microsoft.com/en-us/azure/automation/change-tracking/enable-from-automation-account#enable-machines-in-the-workspace)
     
-    3. Follow the article [Manage Change Tracking and Inventory] (https://learn.microsoft.com/en-us/azure/automation/change-tracking/manage-change-tracking)
+    3. Follow the article [Manage Change Tracking and Inventory](https://learn.microsoft.com/en-us/azure/automation/change-tracking/manage-change-tracking)
     In this article exercie the scenarios below:
         * Configure file tracking on Windows
         * Configure file tracking on Linux
@@ -67,7 +67,17 @@ Below are the lab items that are going to be covered.
         * Track registry keys
         * Search logs for change records
 
-- **Remote  Connect SSH** [(Preview) SSH access to Azure Arc-enabled servers - Azure Arc | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-overview?tabs=azure-cli)
+- **Remote  Connect SSH**
+
+    We are going to make ssh connection to one of the Windows Arc enabled Servers. SSH server services needs to be enabled on the server side. 
+
+1. Logon to one of the Windows Servers using Hyper-V console on Arc Box vm and enable SSH server following the article
+
+    [Get started with OpenSSH for Windows](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=powershell)
+
+2. Enable SSH on azure connected machine agent and enable connection points following the article
+ 
+    [(Preview) SSH access to Azure Arc-enabled servers - Azure Arc | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-overview?tabs=azure-cli)
 
 - **Windows Admin Center** [Manage Azure Arc-enabled Servers using Windows Admin Center in Azure preview | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/manage-arc-hybrid-machines)
 
