@@ -13,7 +13,7 @@ Make sure all of the settings are enabled and defender uses the Log Analytics Wo
 Arcbox has already created some of the Policies, we'll omit these and assign our own policy settings that should be used in customer deployments.
 Please assign Initiatives/Policies listed below within **Resource Group** scope following the article [Tutorial: Create a policy assignment](https://learn.microsoft.com/en-us/azure/azure-arc/servers/learn/tutorial-assign-policy-portal#create-a-policy-assignment):
 
-        Legacy - Enable Azure Monitor for VMs
+        Legacy - Enable Azure Monitor for VMs - (This Initiative is required to configure dependency agent as well as Log Analytics agent on the VMs)
         Audit Windows machines that do not have the specified Windows PowerShell modules installed
         Audit Windows VMs with a pending reboot
 
