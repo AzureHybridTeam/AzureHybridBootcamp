@@ -25,6 +25,7 @@ You can find the list of Policies and Initiatives for Arc Enabled Servers [here]
 
         [Preview]: Configure periodic checking for missing system updates on Azure Arc-enabled servers for Arc-enabled machines
         [Preview]: Machines should be configured to periodically check for missing system updates.
+        [Preview]: Schedule recurring updates using Update Management Center
 
 described in
 
@@ -34,8 +35,15 @@ and
 
 [Monitor if Periodic Assessment is enabled for your machines (both Azure and Arc-enabled machines)](https://learn.microsoft.com/en-us/azure/update-center/periodic-assessment-at-scale#monitor-if-periodic-assessment-is-enabled-for-your-machines-both-azure-and-arc-enabled-machines)
 
-2. Create Maintenance Configuration for Linux and Windows machines.
-    Follow the article [Create a maintenance configuration](https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations-portal#create-a-maintenance-configuration) to create maintenance configuration for Linux and Windows machines.  
+
+
+[Create a maintenance configuration](https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations-portal#create-a-maintenance-configuration) to create maintenance configuration for Linux and Windows machines to be used in Scheduling Policy.
+
+and
+
+[Schedule recurring updates for machines using Azure portal and Azure Policy](https://learn.microsoft.com/en-us/azure/update-center/scheduled-patching?tabs=schedule-updates-single-overview%2Cschedule-updates-scale-overview#dynamic-scoping-using-policy)
+
+ 
 
 - **Inventory / change tracking**
 
