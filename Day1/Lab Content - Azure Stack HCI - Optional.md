@@ -2,7 +2,11 @@
 
 > [Azure Stack HCI foundations - Learning path](https://learn.microsoft.com/en-us/training/paths/azure-stack-hci-foundations/)
 >
->  
+> [Plan for and deploy SDN infrastructure on Azure Stack HCI - Learning path](https://learn.microsoft.com/en-us/training/modules/plan-deploy-sdn-infrastructure/) 
+> 
+> [Azure Stack HCI Workshop Teams](https://teams.microsoft.com/l/team/19%3ae28fa46102514210b4ebbdebd7ee91f6%40thread.skype/conversations?groupId=038d32e9-8df7-4547-a7ad-af80c0818f08&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47
+)
+
 
 # Day 1 - Lab (Optional)
 
