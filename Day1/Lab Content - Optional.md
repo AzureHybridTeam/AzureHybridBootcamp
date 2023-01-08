@@ -176,3 +176,5 @@ Remove-Cluster -Force -CleanupAD -Verbose -ErrorAction SilentlyContinue
 - [] [Enable Azure Arc-enabled data services](https://learn.microsoft.com/en-us/azure/aks/hybrid/deploy-arc-data-services)
 
 - [] [Create and manage custom locations](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/custom-locations)
+
+- [] testing
