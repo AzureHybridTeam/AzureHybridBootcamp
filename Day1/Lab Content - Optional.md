@@ -163,11 +163,19 @@ Remove-Cluster -Force -CleanupAD -Verbose -ErrorAction SilentlyContinue
 
 ### Lab guide
 
+[Explore Azure Arc-enabled Kubernetes cluster extensions](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/extensions)
+
 [Enable Azure Monitor Container Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/containers/container-insights-enable-arc-enabled-clusters?toc=%2Fazure%2Fazure-arc%2Fkubernetes%2Ftoc.json&tabs=create-portal%2Cverify-portal%2Cmigrate-cli)
 
 [Deploy applications using GitOps](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-use-gitops-flux2?tabs=azure-cli)
 
 [Implement CI/CD with GitOps](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-gitops-flux2-ci-cd)
+
+[Enable Azure Policy extension](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/policy-for-kubernetes?toc=%2Fazure%2Fazure-arc%2Fkubernetes%2Ftoc.json&bc=%2Fazure%2Fazure-arc%2Fkubernetes%2Fbreadcrumb%2Ftoc.json#install-azure-policy-extension-for-azure-arc-enabled-kubernetes)
+
+[Access secrets from Azure Key Vault](https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-akv-secrets-provider)
+
+[Enable Microsoft Defender for Containers](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-enable?pivots=defender-for-container-arc&toc=%2Fazure%2Fazure-arc%2Fkubernetes%2Ftoc.json&bc=%2Fazure%2Fazure-arc%2Fkubernetes%2Fbreadcrumb%2Ftoc.json&tabs=aks-deploy-portal%2Ck8s-deploy-asc%2Ck8s-verify-asc%2Ck8s-remove-arc%2Caks-removeprofile-api#protect-arc-enabled-kubernetes-clusters)
 
 ## AKS hybrid with Azure Arc enabled kubernetes - Preparing for Data services
 
