@@ -10,6 +10,12 @@
 
 ## Arc-enabled Server
 
+- Pre-Requisites
+- Onboarding
+- Log Analytic Workspace configuration
+
+
+
 ## Azure Stack HCI
 
 ### Pre-Req
