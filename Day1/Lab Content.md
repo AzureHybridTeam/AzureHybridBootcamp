@@ -140,7 +140,7 @@ New-AzConnectedMachineExtension -ResourceGroupName $ResourceGroup -MachineName $
 
 -   -**Optional Lab**- Onboard Sentinel for newly created Log Analytics Workspace   [Onboard Azure Arc-enabled servers to Microsoft Sentinel - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/secure-azure-arc-enabled-servers/6-onboard-azure-arc-enabled-servers-to-microsoft-sentinel)
 
--  -**Optional Lab**- Security Baseline Assessment [Security baselines assessment | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-security-baselines?view=o365-worldwide)
+-  -**Optional Lab**- Security Baseline Assessment [Security baselines assessment | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-security-baselines?view=o365-worldwide) and enable preview features https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/preview-settings?view=o365-worldwide
 
 -   Simulate “PowerShell script in fileless attack” in "M365 Defender Portal"(security.microsoft.com) [How to run a simulation](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-simulations?view=o365-worldwide#run-a-simulation)
 
