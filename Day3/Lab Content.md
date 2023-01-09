@@ -35,12 +35,12 @@ az aks create --resource-group $AKS_CLUSTER_GROUP_NAME --name $AKS_NAME --enable
 
 WORKSPACE_NAME="$GROUP_NAME-workspace"
 
+But, it is used as **wORKSPACE_NAME** afterwards. 
+Be sure to change **wORKSPACE_NAME** to **WORKSPACE_NAME** with capital **W**!
+
 4. Create the ACA with the below parameters:
 
 az containerapp connected-env create --resource-group $GROUP_NAME --name $CONNECTED_ENVIRONMENT_NAME --custom-location $CUSTOM_LOCATION_ID **--location $LOCATION**
-
-But, it is used as **wORKSPACE_NAME** afterwards. 
-Be sure to change **wORKSPACE_NAME** to **WORKSPACE_NAME** with capital **W**!
 
 Lab Guide:
 
