@@ -28,10 +28,8 @@ This is where you can find training content that's in Azure Hybrid Bootcamp
  
 2. Azure Arc Enabled Container Apps
    1. Overview
-      1. Evolution From Monolith to Microservices
-      2. AKS vs Container Apps
-      3. Features
+      1. Azure Serverless Solutions
    2. Configuration and Deployment Steps
-      1. Environment Preparation
-      2. Sample App Deployment
-   3. What is Next?
+      1. Azure Container Apps
+      2. Features
+   3. Roadmap
