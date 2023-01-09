@@ -73,7 +73,7 @@ Below are the lab items that are going to be covered.
 
     2. Enable SSH on azure connected machine agent and enable connection points following the article
  
-    [(Preview) SSH access to Azure Arc-enabled servers - Azure Arc | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-overview?tabs=azure-cli)
+    [SSH access to Azure Arc-enabled servers - Azure Arc | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-overview?tabs=azure-cli)
 
     3. Try remote SSH to Arc Enabled Server using command line  
     
@@ -128,7 +128,7 @@ New-AzConnectedMachineExtension -ResourceGroupName $ResourceGroup -MachineName $
     **Note:** After setting Up Windows Admin Center, you need to add "Windows Admin Center Administrator Login" for the users who need acces to WAC using IAM (Access Control) of the Arc Enabled Server.
 - ***Azure Monitor*** 
 
-    [Onboard Azure Arc-enabled servers to VM insights - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/monitor-azure-arc-enabled-servers/3-onboard-azure-arc-enabled-servers-to-vm-insights). This article is some old, please especially examine the workbooks located on Azure monitor - Virtual Machines - Map  and choose "Hybrid" button on right hand side, scroll different Workbooks like "Open Ports" or "Failed Connections".
+    [Onboard Azure Arc-enabled servers to VM insights - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/monitor-azure-arc-enabled-servers/3-onboard-azure-arc-enabled-servers-to-vm-insights). The machines are already enabled for Azure monitor, so you may jump to especially examine the workbooks. These workboos can be accessed in Azure Portal - Azure monitor - Virtual Machines - Map- choose "Hybrid" button on right hand side, scroll different Workbooks like "Open Ports" or "Failed Connections".
 
     Additionally please run the common queries on article https://azure.microsoft.com/en-us/blog/analysis-of-network-connection-data-with-azure-monitor-for-virtual-machines/
 
