@@ -1,13 +1,13 @@
 # Day 3 - Lab
 ## Arc Enabled Data Services (takes 2-3 hours)
 
-Before start make sure about below prerequisites:
+Lab prerequisites:
 
 1.Have a Kubernetes cluster and Have access to your Kubernetes Cluster
 
 2.Install  [client tools](https://learn.microsoft.com/en-us/azure/azure-arc/data/install-client-tools) 
 
-Lab steps:
+Lab guide:
 
 - [Deploy directly connected data controller from Azure Portal](https://learn.microsoft.com/en-us/training/modules/deploy-configure-explore-azure-arc-enabled-data-services/5-exercise-deploy-azure-arc-data-controller?ns-enrollment-type=learningpath&ns-enrollment-id=learn.get-started-azure-arc-enabled-sql-managed-instance)
 
@@ -33,7 +33,7 @@ WORKSPACE_NAME="$GROUP_NAME-workspace"
 But, it is used as **wORKSPACE_NAME** afterwards. 
 Be sure to change **wORKSPACE_NAME** to **WORKSPACE_NAME** with capital **W**!
 
-Lab Steps:
+Lab Guide:
 
 -   Environment configuration [Enable Azure Container Apps on Azure Arc-enabled Kubernetes](https://learn.microsoft.com/en-us/azure/container-apps/azure-arc-enable-cluster)
 -   Sample app deployment [Create an Azure Container App on Azure Arc-enabled Kubernetes](https://learn.microsoft.com/en-us/azure/container-apps/azure-arc-create-container-app)
