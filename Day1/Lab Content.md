@@ -21,7 +21,7 @@ Below are the lab items that are going to be covered.
 
 - ***Update Management v2:***
 
-    1. follow the article to assign Update management V2 Policies 
+    1. follow the article to assign Update management V2 Policies.
 
             [Preview]: Configure periodic checking for missing system updates on Azure Arc-enabled servers for Arc-enabled machines
             [Preview]: Machines should be configured to periodically check for missing system updates.
@@ -43,7 +43,7 @@ Below are the lab items that are going to be covered.
     3. For one time installation of updates follow [Install updates one time following Article](https://learn.microsoft.com/en-us/azure/update-center/deploy-updates?tabs=install-single-overview%2Cinstall-scale-overview#install-updates-at-scale)
  
 
-- ***Inventory / Change Tracking***
+- ***Inventory / Change Tracking*** -**Optional Lab**-
 
 
     1. Please check if Automation account is created in ArcBox RG. If not, please create one. 
@@ -61,7 +61,7 @@ Below are the lab items that are going to be covered.
         * Track registry keys
         * Search logs for change records
 
-- ***Remote  Connect SSH***
+- ***Remote  Connect SSH*** - **Optional Lab**
 
     We are going to make ssh connection to one of the Windows Arc enabled Servers. SSH server services needs to be enabled on the server side. 
 
@@ -78,7 +78,7 @@ Below are the lab items that are going to be covered.
     3. Try remote SSH to Arc Enabled Server using command line  
     
 
-- ***Azure Key Vault***
+- ***Azure Key Vault*** **Optional Lab**
 
     We'll be exercising to deploy a self-signed certificate to Arc enabled Server using Azure KeyVault.
 
@@ -126,7 +126,8 @@ New-AzConnectedMachineExtension -ResourceGroupName $ResourceGroup -MachineName $
     [Manage Azure Arc-enabled Servers using Windows Admin Center in Azure preview | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/manage-arc-hybrid-machines)
 
     **Note:** After setting Up Windows Admin Center, you need to add "Windows Admin Center Administrator Login" for the users who need acces to WAC using IAM (Access Control) of the Arc Enabled Server.
-- ***Azure Monitor*** 
+
+- ***Azure Monitor***
 
     [Onboard Azure Arc-enabled servers to VM insights - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/monitor-azure-arc-enabled-servers/3-onboard-azure-arc-enabled-servers-to-vm-insights). The machines are already enabled for Azure monitor, so you may jump to especially examine the workbooks. These workboos can be accessed in Azure Portal - Azure monitor - Virtual Machines - Map- choose "Hybrid" button on right hand side, scroll different Workbooks like "Open Ports" or "Failed Connections".
 
@@ -134,10 +135,15 @@ New-AzConnectedMachineExtension -ResourceGroupName $ResourceGroup -MachineName $
 
 - ***Defender for Servers, SQL and Sentinel Labs***
 -   Improve Secure Score regarding Arc enabled servers and Arc enabled SQL Servers by filtering resource types [Improving your security posture with recommendations in Microsoft Defender for Cloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-cloud/review-security-recommendations)
--   Simulate SQL Server attacks like  SQL Brute Force or SQL Injection on Arcbox-SQL- "Validate the alert" section [Validating Alerts on Microsoft Defender for SQL on machines - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/validating-alerts-on-microsoft-defender-for-sql-on-machines/ba-p/3070714)
--   Onboard Sentinel for newly created Log Analytics Workspace [Onboard Azure Arc-enabled servers to Microsoft Sentinel - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/secure-azure-arc-enabled-servers/6-onboard-azure-arc-enabled-servers-to-microsoft-sentinel)
--   Security Baseline Assessment [Security baselines assessment | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-security-baselines?view=o365-worldwide)
--   Simulate “PowerShell script in fileless attack” in "M365 Defender Portal"(security.microsoft.com) [How to run a simulation](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-simulations?view=o365-worldwide#run-a-simulation)
--   Simulate “Live Response tutorial” first part named “Initiate a live response session and perform basic remediation” in M365 Defender Portal"(security.microsoft.com) [How to run a simulation](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-simulations?view=o365-worldwide#run-a-simulation)
--   Create a custom detection in "M365 Defender Portal"(security.microsoft.com) [Create and manage custom detection rules in Microsoft 365 Defender | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/security/defender/custom-detection-rules?view=o365-worldwide)
 
+-   Simulate SQL Server attacks like  SQL Brute Force or SQL Injection on Arcbox-SQL- "Validate the alert" section [Validating Alerts on Microsoft Defender for SQL on machines - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/validating-alerts-on-microsoft-defender-for-sql-on-machines/ba-p/3070714)
+
+-   -**Optional Lab**- Onboard Sentinel for newly created Log Analytics Workspace   [Onboard Azure Arc-enabled servers to Microsoft Sentinel - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/secure-azure-arc-enabled-servers/6-onboard-azure-arc-enabled-servers-to-microsoft-sentinel)
+
+-   Security Baseline Assessment -Optional-[Security baselines assessment | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/tvm-security-baselines?view=o365-worldwide)
+
+-   Simulate “PowerShell script in fileless attack” in "M365 Defender Portal"(security.microsoft.com) [How to run a simulation](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-simulations?view=o365-worldwide#run-a-simulation)
+
+-   -**Optional Lab**- Simulate “Live Response tutorial” first part named “Initiate a live response session and perform basic remediation” in M365 Defender Portal"(security.microsoft.com)  [How to run a simulation](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-simulations?view=o365-worldwide#run-a-simulation)
+
+-   Create a custom detection in "M365 Defender Portal"(security.microsoft.com) [Create and manage custom detection rules in Microsoft 365 Defender | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/security/defender/custom-detection-rules?view=o365-worldwide)
