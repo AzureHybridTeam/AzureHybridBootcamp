@@ -26,9 +26,18 @@ Lab guide:
 Before start be sure about below recommendations:
 
 1. Do not use corp account for azure portal!
-2. For the first lab scenario there is a definition as:
+
+2. Create AKS with the below parameters:
+
+az aks create --resource-group $AKS_CLUSTER_GROUP_NAME --name $AKS_NAME --enable-aad **--node-vm-size Standard_B4ms** --generate-ssh-keys
+
+3. For the first lab scenario there is a definition as:
 
 WORKSPACE_NAME="$GROUP_NAME-workspace"
+
+4. Create the ACA with the below parameters:
+
+az containerapp connected-env create --resource-group $GROUP_NAME --name $CONNECTED_ENVIRONMENT_NAME --custom-location $CUSTOM_LOCATION_ID **--location $LOCATION**
 
 But, it is used as **wORKSPACE_NAME** afterwards. 
 Be sure to change **wORKSPACE_NAME** to **WORKSPACE_NAME** with capital **W**!
