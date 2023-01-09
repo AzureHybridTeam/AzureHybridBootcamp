@@ -31,20 +31,15 @@ Below are the lab items that are going to be covered.
 
         [Enable Periodic assessment for your Arc machines using Policy](https://learn.microsoft.com/en-us/azure/update-center/periodic-assessment-at-scale#enable-periodic-assessment-for-your-arc-machines-using-policy)
 
-        and 
-
         [Monitor if Periodic Assessment is enabled for your machines (both Azure and Arc-enabled machines)](https://learn.microsoft.com/en-us/azure/update-center/periodic-assessment-at-scale#monitor-if-periodic-assessment-is-enabled-for-your-machines-both-azure-and-arc-enabled-machines)
 
         [Create a maintenance configuration](https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations-portal#create-a-maintenance-configuration) to create maintenance configuration for Linux and Windows machines to be used in Scheduling Policy.
-
-        and
 
         [Schedule recurring updates for machines using Azure portal and Azure Policy](https://learn.microsoft.com/en-us/azure/update-center/scheduled-patching?tabs=schedule-updates-single-overview%2Cschedule-updates-scale-overview#dynamic-scoping-using-policy)
 
         **Note:**   Before creating the scheduling policy, copy the ARM ID of the created maintenance configuration in *properties* section.
     
-    2. For Manual update check without waiting for policy follow [Check for Updates on scale following article](https://learn.microsoft.com/en-us/azure/update-center/view-updates?tabs=singlevm-overview%2Cat-scale-overview#check-updates-at-scale)
-    
+    2. For Manual update check without waiting for policy follow [Check for Updates on scale following article](https://learn.microsoft.com/en-us/azure/update-center/view-updates?tabs=singlevm-overview%2Cat-scale-overview#check-updates-at-scale)    
     3. For one time installation of updates follow [Install updates one time following Article](https://learn.microsoft.com/en-us/azure/update-center/deploy-updates?tabs=install-single-overview%2Cinstall-scale-overview#install-updates-at-scale)
  
 
@@ -81,6 +76,7 @@ Below are the lab items that are going to be covered.
     [(Preview) SSH access to Azure Arc-enabled servers - Azure Arc | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-overview?tabs=azure-cli)
 
     3. Try remote SSH to Arc Enabled Server using command line  
+    
 
 - ***Azure Key Vault***
 
@@ -130,14 +126,11 @@ New-AzConnectedMachineExtension -ResourceGroupName $ResourceGroup -MachineName $
     [Manage Azure Arc-enabled Servers using Windows Admin Center in Azure preview | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/manage-arc-hybrid-machines)
 
     **Note:** After setting Up Windows Admin Center, you need to add "Windows Admin Center Administrator Login" for the users who need acces to WAC using IAM (Access Control) of the Arc Enabled Server.
+- ***Azure Monitor*** 
 
+    [Onboard Azure Arc-enabled servers to VM insights - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/monitor-azure-arc-enabled-servers/3-onboard-azure-arc-enabled-servers-to-vm-insights). This article is some old, please especially examine the workbooks located on Azure monitor - Virtual Machines - Map  and choose "Hybrid" button on right hand side, scroll different Workbooks like "Open Ports" or "Failed Connections".
 
-- ***Azure Monitor*** [Onboard Azure Arc-enabled servers to VM insights - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/monitor-azure-arc-enabled-servers/3-onboard-azure-arc-enabled-servers-to-vm-insights)
-- Alert: Agent version alert
-  - Alert: Heartbeat Alert
-  - Failed connections alert, open ports
-- Custom script extension
-
+    Additionally please run the common queries on article https://azure.microsoft.com/en-us/blog/analysis-of-network-connection-data-with-azure-monitor-for-virtual-machines/
 
 - ***Defender for Servers, SQL and Sentinel Labs***
 -   Improve Secure Score regarding Arc enabled servers and Arc enabled SQL Servers by filtering resource types [Improving your security posture with recommendations in Microsoft Defender for Cloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-cloud/review-security-recommendations)
