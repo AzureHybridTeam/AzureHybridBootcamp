@@ -1,6 +1,7 @@
 ## Deploy AKS hybrid
 
 ### Lab guide
+[Youtube Videos](https://www.youtube.com/watch?v=lHZqLhsQzWA&list=PLEVK042sGT_ITItsZY742_oONPkWU7R5u) to track the Handson Labs
 
 [Deploy and manage AKS hybrid clusters](https://learn.microsoft.com/en-us/azure/aks/hybrid/kubernetes-walkthrough-powershell)
 
