@@ -15,6 +15,14 @@
 
 [Use AKS Hybrid autoscaler](https://learn.microsoft.com/en-us/azure/aks/hybrid/work-with-horizontal-autoscaler)
 
+[Node Auto Repair](https://learn.microsoft.com/en-us/azure/aks/hybrid/node-repair)
+#### AKS Hybrid Networking
+   Info </p>
+   [Flannel](https://github.com/flannel-io/flannel)
+   [Calico](https://www.tigera.io/project-calico/)
+   [Network Policies](https://learn.microsoft.com/en-us/azure/aks/hybrid/calico-networking-policy)
+
+
 [Use multiple load balancers in AKS hybrid](https://learn.microsoft.com/en-us/azure/aks/hybrid/multiple-load-balancers)
 
 [Create additional workload cluster without Load balancer](https://learn.microsoft.com/en-us/azure/aks/hybrid/configure-custom-load-balancer)
@@ -24,7 +32,21 @@
 [Using ingress controller](https://learn.microsoft.com/en-us/azure/aks/hybrid/create-ingress-controller)
 
 
+
+### Kubernetes Workloads
+
+[Pod](https://github.com/Pamir/kubernetes-essentials/tree/master/01-pods)
+
+[Deployment](https://github.com/Pamir/kubernetes-essentials/tree/master/02-deployments)
+
+[ReplicaSet](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/)
+
+[StatefulSet](https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/)
+
+
+
 ## AKS hybrid with Azure Arc enabled kubernetes - Onboarding
+Lab Guide [Youtube Videos](https://www.youtube.com/watch?v=x77DQoYLdW0)
 
 ### Lab guide
 
