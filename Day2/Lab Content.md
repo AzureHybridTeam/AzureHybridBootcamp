@@ -6,7 +6,7 @@
 
 [Deploy AKS Instrastructure](https://learn.microsoft.com/en-us/azure/aks/hybrid/aks-hci-evaluation-guide-2b)
 
-[Deploy and manage AKS hybrid clusters](https://learn.microsoft.com/en-us/azure/aks/hybrid/kubernetes-walkthrough-powershell)
+Removed --> [Deploy and manage AKS hybrid clusters](https://learn.microsoft.com/en-us/azure/aks/hybrid/kubernetes-walkthrough-powershell)
 
 ## AKS hybrid management
 
