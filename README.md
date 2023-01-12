@@ -15,3 +15,5 @@
 
  - Arc-enabled Data Services
  - Arc-enabled Container Apps
+
+This bootcamp organized and delivered by MEA Azure Hybrid Team. 
